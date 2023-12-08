@@ -1,0 +1,23 @@
+.container{
+    padding:20px;
+    display: flex;
+    gap:20px;
+    .card{
+        width: 200px;
+        border:1px solid blue;
+        border-radius: 4px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        height: 400px;
+        .name{
+            font-size: 20px;
+        }
+        .desc{
+            font-size: 14px;
+            height: max-content;
+            word-break: break-all;
+        }
+    }
+}

@@ -1,0 +1,8 @@
+<div  class= 'container'>
+    <div class="name" *ngFor = "let video of videos">
+    <video   autoplay controls>
+        <source [src]="'../../../assets/videos/'+video.path"/>
+     </video>
+     <p class="name">{{video.title}}</p>
+    </div>
+</div>

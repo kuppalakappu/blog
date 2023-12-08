@@ -1,0 +1,9 @@
+<div class="container">
+    <div class="card"  *ngFor="let photo of photos">
+    <img [src]="photo.url" alt="" class="src">
+     <p class="name">{{photo.title}}</p>
+     <p class="desc">{{photo.url}}</p>
+
+    </div>
+
+</div>

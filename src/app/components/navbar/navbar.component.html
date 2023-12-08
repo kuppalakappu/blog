@@ -1,0 +1,19 @@
+
+<div class="container">
+    <nav  *ngFor = 'let nav of navItems' [ngClass]="nav==currentnav?'navitem active':'navitem'" (click)="setNav(nav)">{{nav}}</nav>
+    
+</div>
+<div class="subcontainer">
+    <nav  *ngFor = 'let nav of subnavItems' [ngClass]="nav==currentsubnav?'navitem active':'navitem'" (click)="setsubNav(nav)">{{nav}}</nav>
+    
+</div>
+<app-docs *ngIf = "currentsubnav == 'docs'"></app-docs>
+<app-photos *ngIf = "currentsubnav == 'photos'"></app-photos>
+<app-users *ngIf = "currentsubnav == 'users'"></app-users>
+<app-videos *ngIf = "currentsubnav == 'videos'"></app-videos>
+<app-urls *ngIf = "currentsubnav == 'urls'"></app-urls>
+<app-readme *ngIf = "currentsubnav == 'readme'"></app-readme>
+
+
+
+ 

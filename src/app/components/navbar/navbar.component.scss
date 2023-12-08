@@ -1,0 +1,25 @@
+.container{
+     display:flex;
+     font-size: 14px;
+     gap:10px;
+     background-color: rgb(150, 211, 244);
+    .navitem{
+        padding: 10px;
+        cursor: pointer;
+    }
+    .active{
+        background-color: blue;
+
+    }
+}
+
+.subcontainer{
+    @extend .container;
+    
+    
+
+   .active{
+       background-color:rgb(0, 255, 30);
+
+   }
+}
